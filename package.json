@@ -1,0 +1,28 @@
+{
+  "name": "regressiontest-swaglabs",
+  "version": "1.0.0",
+  "description": "TBD.",
+  "main": "cypress.config.js",
+  "scripts": {
+    "lint": "eslint cypress/**/*.js && eslint cypress.config.js",
+    "lint:fix": "eslint cypress/**/*.js --fix && eslint cypress.config.js --fix",
+    "cy:open": "cypress open",
+    "test": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoglasBSB/RegressionTest-SwagLabs.git"
+  },
+  "keywords": [],
+  "author": "Francisco Dôglas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DoglasBSB/RegressionTest-SwagLabs/issues"
+  },
+  "homepage": "https://github.com/DoglasBSB/RegressionTest-SwagLabs#readme",
+  "devDependencies": {
+    "cypress": "^13.7.1",
+    "eslint": "^8.43.0",
+    "eslint-plugin-cypress": "^2.13.3"
+  }
+}

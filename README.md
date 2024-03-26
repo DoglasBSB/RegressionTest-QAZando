@@ -1,2 +1,3 @@
-# RegressionTest
-Teste de Regressão automatizado
+# RegressionTest com cypress
+
+TBD.
