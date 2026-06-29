@@ -9,6 +9,7 @@ module.exports = defineConfig({
   e2e: {
     defaultCommandTimeout: 10000,
     baseUrl: 'https://automationpratice.com.br/',
+    video: false,
     retries: {
       runMode: 2,  // retries in CI
       openMode: 0, // no retries locally
