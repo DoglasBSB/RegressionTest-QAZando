@@ -1,7 +1,7 @@
 {
-  "name": "regressiontest-swaglabs",
+  "name": "regressiontest-qazando",
   "version": "1.0.0",
-  "description": "TBD.",
+  "description": "Cypress E2E regression test suite for automationpratice.com.br (QAZando).",
   "main": "cypress.config.js",
   "scripts": {
     "lint": "eslint cypress/**/*.js && eslint cypress.config.js",
@@ -11,17 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DoglasBSB/RegressionTest-SwagLabs.git"
+    "url": "git+https://github.com/DoglasBSB/RegressionTest-QAZando.git"
   },
   "keywords": [],
   "author": "Francisco Dôglas",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DoglasBSB/RegressionTest-SwagLabs/issues"
+    "url": "https://github.com/DoglasBSB/RegressionTest-QAZando/issues"
   },
-  "homepage": "https://github.com/DoglasBSB/RegressionTest-SwagLabs#readme",
+  "homepage": "https://github.com/DoglasBSB/RegressionTest-QAZando#readme",
   "devDependencies": {
-    "cypress": "^13.7.1",
+    "@walmyr-filho/cy-press": "^1.0.2",
+    "cypress": "^13.17.0",
     "eslint": "^8.43.0",
     "eslint-plugin-cypress": "^2.13.3"
   }
