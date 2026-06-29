@@ -29,16 +29,16 @@ jobs:
           fi
           echo "✅ Secrets configured"
         env:
-          CYPRESS_USER_EMAIL: ${{ secrets.CYPRESS_USER_EMAIL }}
-          CYPRESS_USER_PASSWORD: ${{ secrets.CYPRESS_USER_PASSWORD }}
+          CYPRESS_USER_EMAIL: ${{ secrets.CYPRESS_USER_EMAIL_QAZANDO }}
+          CYPRESS_USER_PASSWORD: ${{ secrets.CYPRESS_USER_PASSWORD_QAZANDO }}
 
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
           browser: chrome
         env:
-          CYPRESS_USER_EMAIL: ${{ secrets.CYPRESS_USER_EMAIL }}
-          CYPRESS_USER_PASSWORD: ${{ secrets.CYPRESS_USER_PASSWORD }}
+          CYPRESS_USER_EMAIL: ${{ secrets.CYPRESS_USER_EMAIL_QAZANDO }}
+          CYPRESS_USER_PASSWORD: ${{ secrets.CYPRESS_USER_PASSWORD_QAZANDO }}
 
       - name: Upload screenshots on failure
         uses: actions/upload-artifact@v4
