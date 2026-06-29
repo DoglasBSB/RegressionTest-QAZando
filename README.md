@@ -1,6 +1,6 @@
 # RegressionTest — QAZando
 
-![CI](https://github.com/DoglasBSB/RegressionTest-QAZando/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/DoglasBSB/RegressionTest-cypress/actions/workflows/ci.yml/badge.svg)
 ![Cypress](https://img.shields.io/badge/Cypress-13.17.0-04C38E?logo=cypress)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES2015+-F7DF1E?logo=javascript&logoColor=black)
 ![License](https://img.shields.io/badge/license-MIT-blue)
@@ -41,7 +41,7 @@ Suite de testes de regressão E2E para a aplicação [automationpratice.com.br](
 
 ```bash
 # Clone o repositório
-git clone https://github.com/DoglasBSB/RegressionTest-QAZando.git
+git clone https://github.com/DoglasBSB/RegressionTest-cypress.git
 cd RegressionTest-QAZando
 
 # Instale as dependências
