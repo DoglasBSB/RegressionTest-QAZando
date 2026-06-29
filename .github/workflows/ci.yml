@@ -21,6 +21,17 @@ jobs:
           node-version: 22
           cache: npm
 
+      - name: Verify required secrets
+        run: |
+          if [ -z "$CYPRESS_USER_EMAIL" ] || [ -z "$CYPRESS_USER_PASSWORD" ]; then
+            echo "❌ Missing secrets: configure CYPRESS_USER_EMAIL and CYPRESS_USER_PASSWORD in Settings → Secrets and variables → Actions"
+            exit 1
+          fi
+          echo "✅ Secrets configured"
+        env:
+          CYPRESS_USER_EMAIL: ${{ secrets.CYPRESS_USER_EMAIL }}
+          CYPRESS_USER_PASSWORD: ${{ secrets.CYPRESS_USER_PASSWORD }}
+
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
